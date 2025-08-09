@@ -53,7 +53,8 @@ itCompanies.forEach(function(element, index, array) {
     console.log(element)
 })
 
-console.log(itCompanies.splice(0, itCompanies.length - 1).join(", ") + ", and " + itCompanies[itCompanies.length - 1] + " are IT companies.")
+const itComp = [...itCompanies]
+console.log(itComp.splice(0, itComp.length - 1).join(", ") + ", and " + itComp[itComp.length - 1] + " are IT companies.")
 
 if(itCompanies.includes("Amazon")) {
     console.log("Amazon")
