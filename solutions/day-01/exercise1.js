@@ -65,3 +65,26 @@ if(itCompanies.includes("Amazon")) {
 console.log(itCompanies.filter(function(element, index, array) {
     return element.match(/.*[o].*[o].*/)
 }))
+
+// looping practice
+
+const countrie = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+for (const country of countrie) {
+  console.log(country.toUpperCase())
+}
+
+countrie.forEach((country, i, arr) => {
+  console.log(i, country.toUpperCase())
+})
+
+const user = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  skills: ['HTML', 'CSS', 'JS', 'React', 'Node', 'Python', 'D3.js'],
+}
+
+for (const key in user) {
+  console.log(key, user[key])
+}
